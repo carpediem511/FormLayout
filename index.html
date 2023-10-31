@@ -2,123 +2,125 @@
 <html>
 
 <head>
-        <meta charset="utf-8"/>
-        <title>Вёрстка формы</title>
-        <link rel="stylesheet" type="text/css" href="reset.css"/>
-        <link rel="stylesheet" type="text/css" href="styles.css"/>
-        <link rel="stylesheet" href="icons/css/all.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"> 
-        
+	<meta charset="utf-8" />
+	<title>Вёрстка формы</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" href="icons/css/all.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
 </head>
 
-    <body>
+<body>
 
-        <div class="form__main"> 
+	<div class="form__main">
 
-            <div class="form__additional">
+		<div class="form__additional">
+			<img class="image" src="mountains-1.jpg" />
 
-                <img class="image" src="mountains-1.jpg"/>
+			<div class="registration">
+				<div class="registration__title">Регистрация</div>
 
-                <div class="registration">
-                         <div class="registration__title">Регистрация</div>
+				<div class="personalInfo">
 
-                    <div class="personalInfo">
-                        
-                        <form action="https://www.bit-by-bit.ru/form-submit">
+					<form action="https://www.bit-by-bit.ru/form-submit">
 
-                            <div class="line1">
-                            <div class="field__middle">
-                                <label for="name">Имя</label> <br>
-                                <input type="text" class="color__inputText" name="name" />
-                            </div>
-                            
-                            <div class="field__middle">
-                                <label for="surname">Фамилия</label><br>
-                                <input type="text" class="color__inputText" name="surname" />
-                            </div>
-                            </div>
+						<div class="line1">
+							<div class="field__middle">
+								<label for="name">Имя</label> <br>
+								<input type="text" class="color__inputText" name="name" />
+							</div>
 
-                            <div class="line1">
-                            <div class="field__middle">
-                                <label for="email">Email</label><br>
-                                <input type="email" class="color__inputText" name="email" />
-                            </div>
+							<div class="field__middle">
+								<label for="surname">Фамилия</label><br>
+								<input type="text" class="color__inputText" name="surname" />
+							</div>
+						</div>
 
-                            <div class="field__middle">
-                                <label for="phone">Телефон</label><br>
-                                <input type="number" class="color__inputText" name="phone" />
-                            </div>
+						<div class="line1">
+							<div class="field__middle">
+								<label for="email">Email</label><br>
+								<input type="email" class="color__inputText" name="email" />
+							</div>
 
-                            </div>
+							<div class="field__middle">
+								<label for="phone">Телефон</label><br>
+								<input type="number" class="color__inputText" name="phone" />
+							</div>
 
-                            <div class="border"></div>
+						</div>
 
-                            <div class="title">Адрес доставки</div>
+						<div class="border"></div>
 
-                            <div class="line2">
-                            <div class="field__mini">
-                                <label for="country">Страна</label><br>
-                                <select id="countries" name="country">
-                                    <option value="Russia">Россия</option>
-                                    <option value="Kazakhstan">Казахстан</option>
-                                    <option value="Belarus">Белоруссия</option>
-                                    <option value="Poland">Польша</option>
-                                </select>
-                            </div>
+						<div class="title">Адрес доставки</div>
 
-                            <div class="field__mini">
-                                <label for="city">Город</label>
-                                <input type="text" class="color__inputText" name="city"/>
-                            </div>
+						<div class="line2">
+							<div class="field__mini">
+								<label for="country">Страна</label><br>
+								<select id="countries" name="country">
+									<option value="Russia">Россия</option>
+									<option value="Kazakhstan">Казахстан</option>
+									<option value="Belarus">Белоруссия</option>
+									<option value="Poland">Польша</option>
+								</select>
+							</div>
 
-                            <div class="field__mini">
-                                <label for="index">Почтовый индекс</label>
-                                <input type="number" class="color__inputText" name="index"/>
-                            </div>
-                            </div>
+							<div class="field__mini">
+								<label for="city">Город</label>
+								<input type="text" class="color__inputText" name="city" />
+							</div>
 
-                            <div class="line3">
-                            <div class="field__max"><br><br>
-                                <label for="address">Адрес доставки (улица, дом, квартира)</label><br>
-                                <input type="text" class="color__inputText" name="address" />
-                            </div>
-                            </div>
+							<div class="field__mini">
+								<label for="index">Почтовый индекс</label>
+								<input type="number" class="color__inputText" name="index" />
+							</div>
+						</div>
 
-                            <div class="border"></div>
+						<div class="line3">
+							<div class="field__max"><br><br>
+								<label for="address">Адрес доставки (улица, дом, квартира)</label><br>
+								<input type="text" class="color__inputText" name="address" />
+							</div>
+						</div>
 
-                            <div class="title">Уведомлять об акциях и скидках:</div>
+						<div class="border"></div>
 
-                            <div class="subtitle">Мы не будем отправлять спам, но напишем, когда поступят новые товары<br>
-                                                  или будет большая распродажа.</div>
+						<div class="title">Уведомлять об акциях и скидках:</div>
 
-                            <div class="notifications">
-                                <div class="choice">
-                                <input type="checkbox" id="choice1" class="checkbox__visual" value="on"  name="emailNotification" />
-                                <label for="choice1">По email</label> 
-                                </div>
+						<div class="subtitle">Мы не будем отправлять спам, но напишем, когда поступят новые товары<br>
+							или будет большая распродажа.</div>
 
-                                <div class="choice">
-                                <input type="checkbox" id="choice2" class="checkbox__visual" value="on" name="smsNotification" />
-                                <label for="choice2">По SMS</label> 
-                                </div>
+						<div class="notifications">
+							<div class="choice">
+								<input type="checkbox" id="choice1" class="checkbox__visual" value="on"
+									name="emailNotification" />
+								<label for="choice1">По email</label>
+							</div>
 
-                                <div class="choice">
-                                <input type="checkbox" id="choice3" class="checkbox__visual" value="on" name="PushNotification" />
-                                <label for="choice3">Push-уведомления в приложении</label>
-                                </div>
+							<div class="choice">
+								<input type="checkbox" id="choice2" class="checkbox__visual" value="on"
+									name="smsNotification" />
+								<label for="choice2">По SMS</label>
+							</div>
 
-                            </div>
+							<div class="choice">
+								<input type="checkbox" id="choice3" class="checkbox__visual" value="on"
+									name="PushNotification" />
+								<label for="choice3">Push-уведомления в приложении</label>
+							</div>
 
-                            <button type="submit" class="button">Создать аккаунт</button>
-                            
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+						</div>
 
-    </body>
+						<button type="submit" class="button">Создать аккаунт</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
 
 </html>

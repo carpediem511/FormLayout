@@ -3,13 +3,12 @@ html {
     --textAboveForm-color: #404040;
     --borderColor-color: #d4d4d4;
     --colorWindow-color: white;
-    --userColor--color:#13b484;
-    var(--primary-font-family);
+ 	--userColor-color: #13b484; 
+      font-family: var(--primary-font-family);
     
 }
 
 .form__main {
-    width: 2056px;
     max-width: 100%;
     background-color: #f5f5f5;
     padding-top: 80px;
@@ -18,8 +17,7 @@ html {
 
 .form__additional {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 1024px;
     background-color: var(--colorWindow-color);
     font-family: var(--primary-font-family);
@@ -64,7 +62,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-input[type~="text"], input[type~="number"], input[type~="email"], input[type~="select"] textarea
+input[type="text"], input[type="number"], input[type="email"], input[type="select"] textarea
 {font-size: 16px;} 
 
   
@@ -76,13 +74,13 @@ input.color__inputText {
     height: 30px;
     font-family: var(--primary-font-family);
     padding-left: 10px;
-    color: #13b484;
+   	color: var(--userColor-color);
 }
 
 input.color__inputText:focus {
-    border: 2px solid #0ea5e9;
-    outline: 0;
-    outline-offset: 0;
+  border: 2px solid #0ea5e9;
+  outline: 0;
+  outline-offset: 0;
 }
   
 .checkbox__visual {
